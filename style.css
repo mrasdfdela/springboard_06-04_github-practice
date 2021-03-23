@@ -12,7 +12,7 @@ input[type=button] {
   width: 100px;
 }
 
-#flexBox {
+#meme-containers {
   display: flex;
   flex-wrap: wrap;
 }

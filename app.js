@@ -17,7 +17,7 @@ btn.addEventListener('click', function(e) {
     newDiv.append(newTextTop)
     newDiv.append(newTextCenter)
     newDiv.append(newTextBottom)
-    document.querySelector('#flexBox').append(newDiv)
+    document.querySelector('#meme-containers').append(newDiv)
 
     imgUrl.value = null
     textTop.value = null
@@ -53,7 +53,7 @@ function createCaption(text,pos) {
 }
 
 // Delete Meme
-memes = document.querySelector('#flexBox')
+memes = document.querySelector('#meme-containers')
 
 memes.addEventListener('mouseover', function(e){
   container = e.target.parentElement
