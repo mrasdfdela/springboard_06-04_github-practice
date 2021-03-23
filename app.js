@@ -35,7 +35,7 @@ function validInputs(){
 
 function createDiv() {
   el = document.createElement('div')
-  el.classList.add('container')
+  el.classList.add('meme-container')
   return el
 }
 
@@ -57,7 +57,7 @@ memes = document.querySelector('#meme-containers')
 
 memes.addEventListener('mouseover', function(e){
   container = e.target.parentElement
-  if (container.classList.contains("container")){
+  if (container.classList.contains("meme-container")){
     text = container.querySelector('.center')
     text.classList.add('visible')
   }
@@ -65,7 +65,7 @@ memes.addEventListener('mouseover', function(e){
 
 memes.addEventListener('mouseout', function (e) {
   container = e.target.parentElement
-  if (container.classList.contains("container")) {
+  if (container.classList.contains("meme-container")) {
     text = container.querySelector('.center')
     text.classList.remove('visible')
   }
@@ -73,6 +73,6 @@ memes.addEventListener('mouseout', function (e) {
 
 memes.addEventListener('click', function(e) {
   container = e.target.parentElement
-  if (container.classList.contains("container"))
+  if (container.classList.contains("meme-container"))
   container.remove()
 })

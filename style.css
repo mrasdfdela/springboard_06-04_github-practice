@@ -17,7 +17,7 @@ input[type=button] {
   flex-wrap: wrap;
 }
 
-.container {
+.meme-container {
   width: 23%;
   position: relative;
   text-align: center;
